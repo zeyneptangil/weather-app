@@ -45,6 +45,10 @@ button:hover {
   cursor: pointer;
 }
 
+.active:hover {
+  text-decoration: none;
+}
+
 .form-control {
   background: #e4f4f3;
   border: 3px solid #5585b5;
@@ -68,7 +72,18 @@ button:hover {
 .units {
   position: relative;
   font-size: 12px;
-  top: -25px;
+  top: -35px;
+}
+
+.active {
+  color: #5585b5;
+  cursor: default;
+  text-decoration: none;
+}
+.underline {
+  color: #5585b5;
+  cursor: default;
+  text-decoration: none;
 }
 .col {
   text-align: center;
