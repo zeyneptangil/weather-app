@@ -18,6 +18,11 @@ h3 {
 p {
   color: #ee7d33;
 }
+
+li {
+  font-size: 14px;
+  list-style: none;
+}
 footer p {
   text-align: center;
   font-size: small;
