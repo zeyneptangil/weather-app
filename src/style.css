@@ -55,6 +55,16 @@ button:hover {
   max-width: 600px;
 }
 
+.temperature {
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 400;
+}
+.units {
+  position: relative;
+  font-size: 12px;
+  top: -25px;
+}
 .col {
   text-align: center;
 }
