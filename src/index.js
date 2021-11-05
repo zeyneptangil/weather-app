@@ -38,6 +38,8 @@ function showWeather(response) {
     response.data.wind.speed
   );
 
+  celsiusTemperature = response.data.main.temp;
+
   let iconElement = document.querySelector("#icon");
 
   iconElement.setAttribute(
@@ -71,10 +73,24 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let celsiusTemperature = null;
+
 let form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 searchCity("Istanbul");
