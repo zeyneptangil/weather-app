@@ -44,15 +44,7 @@
       </div>
       <div class="card-body">
         <h1 id="city"><strong></strong></h1>
-        <ul>
-          <li>
-            Last updated at
-            <span id="current-time"></span>
-          </li>
-          <li>
-            <small>Sunrise 07:03 | Sunset 18:41</small>
-          </li>
-        </ul>
+        <img src="" alt="" width="50px" id="icon" />
         <h2>
           <span class="temperature" id="temperature"></span
           ><span class="units"
@@ -60,16 +52,18 @@
             <a href="#" id="fahrenheit-link" class="underline"> °F </a></span
           >
           <br />
-          <br />
-          <img src="" alt="" width="50px" id="icon" />
-          <br />
-          <span id="description"></span>
         </h2>
-        <br />
         <div class="row">
+          <div class="col-9" id="description"></div>
           <div class="col-9">H:20°L:14°</div>
           <div class="col-9">Humidity: <span id="humidity"></span>%</div>
           <div class="col-9">Wind: <span id="wind"></span>km/h</div>
+          <br />
+          <br />
+          <br />
+          <div class="col-9">
+            Last updated at <span id="current-time"></span>
+          </div>
         </div>
       </div>
       <br />
