@@ -1,7 +1,11 @@
 body {
   font-family: "Raleway", sans-serif;
   padding: 20px;
-  color: #5585b5;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(161, 255, 206) 0%,
+    rgb(250, 255, 209) 90%
+  );
 }
 
 h1 {
@@ -17,7 +21,7 @@ h3 {
   font-size: 16px;
 }
 p {
-  color: #ee7d33;
+  color: #1f6f78;
 }
 
 li {
@@ -34,15 +38,15 @@ img {
 }
 
 #current-location-button {
-  background: #e4f4f3;
-  border: 3px solid #5585b5;
+  background: #effbd1;
+  border: 3px solid #1f6f78;
   border-radius: 200px;
   padding: 5px 20px;
 }
 
 button:hover {
-  color: #ee7d33;
-  background-color: #5585b5;
+  color: #1f6f78;
+  background-color: #1f6f78;
   cursor: pointer;
 }
 
@@ -51,15 +55,15 @@ button:hover {
 }
 
 .form-control {
-  background: #e4f4f3;
-  border: 3px solid #5585b5;
+  background: #effbd1;
+  border: 3px solid #1f6f78;
   border-radius: 200px;
   padding: 5px 20px;
 }
 .card-body {
-  background: #e4f4f3;
+  background: #a7f8ce;
   margin: 2px auto;
-  border: solid #5585b5;
+  border: solid #1f6f78;
   border-radius: 10px;
   padding: 20px 30px;
   max-width: 600px;
