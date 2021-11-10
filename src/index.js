@@ -26,6 +26,31 @@ function currentTime() {
 }
 currentTime();
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+              <div class="col-2">
+                ${day}
+                <img src="images/rainy.png" alt="" width="36" />
+                <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max"> 18° </span>
+                <span class="weather-forecast-temperature-min"> 12° </span>
+                </div>
+              </div>
+           
+`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -107,3 +132,5 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("Istanbul");
+
+displayForecast();
